@@ -15,10 +15,6 @@ public class AwsBatch {
 
 	public static void readProperties() throws IOException, URISyntaxException {
 		
-		AwsBatch awsBatch = new AwsBatch();
-		URI s = awsBatch.getClass().getResource("config.properties").toURI();
-		System.out.println("URI :"+s.toString());
-		
 		File file = new File("resources/config.properties");
 		String absolutePath = file.getAbsolutePath();
 		String canonicalPath = file.getCanonicalPath();
@@ -56,5 +52,9 @@ public class AwsBatch {
 //        } catch (IOException ex) {
 //            ex.printStackTrace();
 //        }
+	}
+	
+	public String getMessage() {
+		return "sushant";
 	}
 }
